@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f4f6;
+  color: #222;
+  font-family: Arial, "Yu Gothic", "Hiragino Kaku Gothic ProN", sans-serif;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+.page-frame {
+  max-width: 1400px;
+  margin: 24px auto;
+  background: #fff;
+  border: 1px solid #cfcfcf;
+  min-height: calc(100vh - 48px);
+  padding: 32px;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.header-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+}
+
+.user-info {
+  font-size: 14px;
+  color: #444;
+}
+
+.page-body {
+  width: 100%;
+}
+
+.top-page-content,
+.cultivation-page-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 32px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  flex: 1 1 520px;
+  min-width: 520px;
+}
+
+.right-panel {
+  flex: 0 0 320px;
+  width: 320px;
+  display: block;
+}
+
+.top-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.top-link-button {
+  margin-top: 8px;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow: auto;
+}
+
+.data-table {
+  border-collapse: collapse;
+  margin-bottom: 12px;
+  background: #fff;
+}
+
+.data-table th,
+.data-table td {
+  border: 1px solid #555;
+  min-width: 140px;
+  height: 72px;
+  text-align: left;
+  vertical-align: middle;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.data-table th:first-child {
+  min-width: 180px;
+  font-weight: 700;
+  white-space: nowrap;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.sub-table th,
+.sub-table td {
+  height: 58px;
+}
+
+.primary-button,
+.secondary-button {
+  border: 1px solid #999;
+  background: #f4f4f4;
+  padding: 12px 22px;
+  cursor: pointer;
+}
+
+.primary-button:hover,
+.secondary-button:hover {
+  background: #e8e8e8;
+}
+
+.form-panel {
+  width: 360px;
+}
+
+.vertical-form,
+.register-form,
+.login-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row,
+.form-group {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.form-row label {
+  width: 120px;
+  white-space: nowrap;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+.form-row input,
+.form-row select,
+.form-group input,
+.form-group select {
+  width: 160px;
+  height: 44px;
+  box-sizing: border-box;
+}
+
+.button-row {
+  display: flex;
+  margin-top: 8px;
+}
+
+.button-row.right {
+  justify-content: flex-end;
+}
+
+.employee-table {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 700px;
+  background: #fff;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #555;
+  text-align: center;
+  padding: 12px;
+  height: 56px;
+}
+
+.employees-page-content,
+.register-page-content {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.register-row-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.register-row-column label {
+  font-weight: 700;
+}
+
+.register-row-column input {
+  width: 100%;
+  height: 44px;
+  border: 1px solid #999;
+  padding: 8px 12px;
+}
+
+.error-text {
+  margin: 0;
+  color: #d93025;
+  font-size: 14px;
+}
+
+.login-page {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: #f3f4f6;
+}
+
+.login-card {
+  width: 420px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 32px;
+}
+
+.login-card h1 {
+  margin: 0 0 12px;
+  text-align: center;
+}
+
+.form-group {
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-group label {
+  font-weight: 700;
+}
+
+.watering-guide {
+  margin-top: 48px;
+}
+
+.watering-guide h2 {
+  margin: 0 0 20px;
+  font-size: 28px;
+}
+
+.guide-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+.guide-table th,
+.guide-table td {
+  border: 1px solid #555;
+  padding: 14px 12px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.guide-table th {
+  background: #f1f1f1;
+}
+
+.guide-table td:last-child {
+  text-align: left;
+}
+
+.guide-note-box {
+  margin-top: 24px;
+  width: 80%;
+  border: 1px solid #777;
+  padding: 20px 24px;
+  background: #fff;
+}
+
+.guide-note-box h3 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.guide-note-box ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.guide-note-box li {
+  margin-bottom: 8px;
+  line-height: 1.7;
+}
